@@ -1,9 +1,9 @@
 
 import 'antd/dist/reset.css';
 import './App.css';
-import { Button } from 'antd'
+
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import Bai3 from './components/Exam02';
+import Bai1 from './components/Bai1';
 
 const { Header, Content, Footer } = Layout;
 const App = () => {
@@ -11,53 +11,10 @@ const App = () => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout className="layout">
-      <Header>
-        <div className="logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={new Array(15).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: `nav ${key}`,
-            };
-          })}
-        />
-      </Header>
-      <Content
-        style={{
-          padding: '0 50px',
-        }}
-      >
-        <Breadcrumb
-          style={{
-            margin: '16px 0',
-          }}
-        >
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
-        <div
-          className="site-layout-content"
-          style={{
-            background: colorBgContainer,
-          }}
-        >
-          <Bai3 />
-        </div>
-      </Content>
-      <Footer
-        style={{
-          textAlign: 'center',
-        }}
-      >
-        Ant Design ©2023 Created by Ant UED
-      </Footer>
-    </Layout>
-  );
+
+    <div>
+      <Bai1 />
+    </div>
+  )
 };
 export default App;
