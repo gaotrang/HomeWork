@@ -3,9 +3,9 @@ import 'antd/dist/reset.css';
 import './App.css';
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import Bai1 from './components/Bai1';
+import Bai4 from './components/Bai4';
 
-const { Header, Content, Footer } = Layout;
+// const { Header, Content, Footer } = Layout;
 const App = () => {
   const {
     token: { colorBgContainer },
@@ -13,7 +13,7 @@ const App = () => {
   return (
 
     <div>
-      <Bai1 />
+      <Bai4 />
     </div>
   )
 };

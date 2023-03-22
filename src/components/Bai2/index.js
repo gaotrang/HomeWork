@@ -7,7 +7,7 @@ const Bai2 = () => {
 
     const onChange = (e) => {
         const name = e.target.email
-        const value = e.target.password
+        const value = e.target.value
 
         setFormData({
             ...formData,
