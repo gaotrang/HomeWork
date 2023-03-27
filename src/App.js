@@ -3,17 +3,17 @@ import 'antd/dist/reset.css';
 import './App.css';
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import Bai4 from './components/Bai4';
+import CPN1 from './components/Bai5/CPN1';
 
 // const { Header, Content, Footer } = Layout;
 const App = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
+  // const {
+  //   token: { colorBgContainer },
+  // } = theme.useToken();
   return (
 
     <div>
-      <Bai4 />
+      <CPN1 />
     </div>
   )
 };
